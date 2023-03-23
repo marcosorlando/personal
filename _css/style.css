@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap');
 
-
 :root {
     --font-family-primary: 'Poppins', sans-serif;
     --font-family-secondary: 'Alkatra', cursive;
@@ -8,7 +7,6 @@
     --second-color: #1F242D;
     --third-color: #2C4766
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -106,9 +104,11 @@ body {
     animation-delay: .7s;
 }
 
-.home-content p
-{
+.home-content p{
     font-size: 1em;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .btn {
@@ -122,8 +122,11 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: all ease .5s;
+    transition: .5s ease;
     box-shadow: 0 0 5px var(--first-color), inset 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .btn:hover {
@@ -141,8 +144,11 @@ body {
     border: 2px solid var(--first-color);
     color: var(--first-color);
     text-decoration: none;
-    transition: ease-in-out .5s;
+    transition: ease .5s;
     margin: 30px 15px 30px 0;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .social-media a:hover {
@@ -153,11 +159,14 @@ body {
 }
 
 .home-img {
-    width: 35vw;
+    width: 30vw;
 }
 
 .home-img img {
     width: 100%;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
 }
 
 /* LOGIN PAGE */
@@ -258,7 +267,6 @@ border-color: var(--first-color);
 .forgot-pass {
     margin: -15px 0 10px;
     text-align: center;
-    
 }
 
 .forgot-pass a {
@@ -351,7 +359,19 @@ border-color: var(--first-color);
         opacity: 0;
     }
     100% {
-        transform: scale(100%);
+        transform: scale(1);
         opacity: 1;
+    }
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+
+    }
+    100%{
+        transform: translateY(0);
     }
 }
