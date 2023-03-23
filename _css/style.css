@@ -296,6 +296,45 @@ body {
     text-shadow: -2px -2px 4px rgba(0,0,0);
 }
 
+/*About css*/
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 2rem 0 3rem;
+    color: #FFFFFF;
+}
+
+.about-content h2> span {
+     color: var(--first-color);
+     font-size: 1em;
+ }
 /*.#########################
 ### KEYFRAMES ANIMATION ####
 #########################.*/
@@ -375,3 +414,4 @@ body {
         transform: translateY(0);
     }
 }
+
