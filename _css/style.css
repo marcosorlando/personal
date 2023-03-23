@@ -55,7 +55,7 @@ body {
     transition: ease-in .5s;
     animation: slideTop .7s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    
+
 }
 
 .navbar a:hover,
@@ -90,7 +90,7 @@ body {
     font-weight: 700;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
-    
+
 }
 
 .home-content h3 > span {
@@ -179,7 +179,7 @@ body {
     align-items: center;
 }
 
- .animation-circle span{
+.animation-circle span{
     position: absolute;
     left: 0;
     width: 32px;
@@ -188,8 +188,8 @@ body {
     border-radius: 8px;
     transform-origin: 128px;
     transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
-     animation: animateBlink 3s linear infinite;
-     animation-delay: calc(var(--i)*(3s / 50));
+    animation: animateBlink 3s linear infinite;
+    animation-delay: calc(var(--i)*(3s / 50));
 }
 .login-box {
     width: 100vw;
@@ -234,7 +234,7 @@ body {
 .input-box input:focus,
 .input-box input:valid
 {
-border-color: var(--first-color);
+    border-color: var(--first-color);
 }
 .input-box label {
     position: absolute;
@@ -246,19 +246,19 @@ border-color: var(--first-color);
     pointer-events: none;
     transition: ease .5s;
 }
- .input-box input:focus~label,
- .input-box input:valid~label
- {
-     top: 1px;
-     font-size: 0.8em;
-     background-color: var(--second-color);
-     padding: 0 6px;
-     color: var(--first-color);
- }
- .input-box:nth-of-type(1){
-     animation: slideTop 1s ease forwards;
-     animation-delay: .7s;
- }
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: 1px;
+    font-size: 0.8em;
+    background-color: var(--second-color);
+    padding: 0 6px;
+    color: var(--first-color);
+}
+.input-box:nth-of-type(1){
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
 .input-box:nth-of-type(2){
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
@@ -279,7 +279,7 @@ border-color: var(--first-color);
 
 .login-box form .btn {
     width: 100%;
-   font-size: 1.2em;
+    font-size: 1.2em;
 }
 .signup-link{
     margin: 20px 0 10px;
