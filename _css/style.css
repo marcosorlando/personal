@@ -334,10 +334,11 @@ h3 {
 /*About css*/
 .about {
     display: flex;
+    padding: 50px 10%;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-color);
+    background: var(--second-bg-color);
 }
 
 .about-img img {
@@ -356,17 +357,17 @@ h3 {
 }
 
 .about-content h3 {
-    font-size: 2rem;
+    font-size: 2em;
     color: #FFFFFF;
 }
 
 .about-content p {
-    font-size: 1rem;
+    font-size: 1em;
     margin: 2rem 0 3rem;
     color: #FFFFFF;
 }
 
-.about-content h2>span {
+.about-content h2 > span {
     color: var(--first-color);
     font-size: 1em;
 }
