@@ -441,6 +441,49 @@ section {
     text-align: center;
     font-size: 4.5rem;
 }
+.contact form{
+    max-width: 70rem;
+    text-align: center;
+    margin: 1rem auto 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    border: 2px  solid var(--first-color);
+    margin: .7rem 0 ;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    font-size: 3em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact  h2 > span {
+    color: var(--first-color);
+    font-size: 1em;
+}
 
 
 /*.#########################
