@@ -34,7 +34,6 @@ body {
 
 h1 {
     font-size: 3em;
-
 }
 
 h2 {
@@ -524,7 +523,6 @@ section {
 
     50% {
         transform: translateY(-20px);
-
     }
 
     100% {
