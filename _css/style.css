@@ -18,6 +18,7 @@
     box-sizing: border-box;
     font-family: var(--font-family-primary);
     font-size: 16px;
+
 }
 
 html {
@@ -29,6 +30,7 @@ body {
     background-color: var(--second-color);
     font-size: 1em;
     min-height: 100vh;
+
     color: var(--text-color);
 }
 
@@ -57,6 +59,7 @@ h3 {
     justify-content: space-between;
 }
 
+
 .text-first-color {
     color: var(--first-color);
 }
@@ -80,7 +83,6 @@ h3 {
     transition: ease-in .5s;
     animation: slideTop .7s ease forwards;
     animation-delay: calc(.2s * var(--i));
-
 }
 
 .navbar a:hover,
@@ -115,8 +117,19 @@ h3 {
     font-weight: 700;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
-
 }
+
+.home-content h3 > span {
+    color: var(--first-color);
+    font-size: 1em;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin: 0 0 30px 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
 
 .home-content h3>span {
     color: var(--first-color);
@@ -156,6 +169,8 @@ h3 {
 
 .btn:hover {
     box-shadow: 0 0 10px var(--first-color), inset 0 0 10px 5px var(--first-color);
+    background: var(--second-color);
+    color: var(--first-color);
 }
 
 .social-media a {
@@ -196,6 +211,7 @@ h3 {
 
 /* LOGIN PAGE */
 .animation-circle {
+
     position: relative;
     width: 256px;
     height: 256px;
@@ -204,7 +220,9 @@ h3 {
     align-items: center;
 }
 
+
 .animation-circle span {
+
     position: absolute;
     left: 0;
     width: 32px;
@@ -242,6 +260,7 @@ h3 {
     color: var(--first-color);
 }
 
+
 .input-box {
     position: relative;
     margin: 25px 0;
@@ -251,6 +270,7 @@ h3 {
     width: 100%;
     height: 50px;
     background-color: transparent !important;
+
     border: 2px solid var(--third-color);
     outline: none;
     border-radius: 40px;
@@ -259,6 +279,13 @@ h3 {
     color: #FFFFFF;
     padding: 0 20px;
 }
+
+.input-box input:focus,
+.input-box input:valid
+{
+    border-color: var(--first-color);
+}
+
 
 .input-box input:focus,
 .input-box input:valid {
@@ -277,6 +304,11 @@ h3 {
 }
 
 .input-box input:focus~label,
+.input-box input:valid~label
+{
+
+
+.input-box input:focus~label,
 .input-box input:valid~label {
     top: 1px;
     font-size: 0.8em;
@@ -285,12 +317,19 @@ h3 {
     color: var(--first-color);
 }
 
+.input-box:nth-of-type(1){
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+.input-box:nth-of-type(2){
+
 .input-box:nth-of-type(1) {
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
 .input-box:nth-of-type(2) {
+
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
@@ -304,6 +343,84 @@ h3 {
     font-size: .85em;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.forgot-pass a:hover {text-decoration: underline}
+
+.login-box form .btn {
+    width: 100%;
+    font-size: 1.2em;
+}
+.signup-link{
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.signup-link a{
+    font-size: 1.1em;
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.signup-link a:hover{
+    text-decoration: underline;
+    text-shadow: -2px -2px 4px rgba(0,0,0);
+}
+
+/*.#########################
+### KEYFRAMES ANIMATION ####
+#########################.*/
+
+@keyframes animateBlink {
+    0% {
+        background-color: var(--first-color);
+    }
+    25% {
+        background-color: var(--third-color);
+    }
+}
+
+.contact form{
+    max-width: 70rem;
+    text-align: center;
+    margin: 1rem auto 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    border: 2px  solid var(--first-color);
+    margin: .7rem 0 ;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    font-size: 3em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact  h2 > span {
+    color: var(--first-color);
+    font-size: 1em;
 }
 
 .forgot-pass a:hover {
@@ -457,12 +574,12 @@ section {
     }
 }
 
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -474,7 +591,6 @@ section {
         transform: translateX(100px);
         opacity: 0;
     }
-
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -486,7 +602,6 @@ section {
         transform: translateY(100px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -498,7 +613,6 @@ section {
         transform: translateY(-100px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -510,24 +624,27 @@ section {
         transform: scale(0);
         opacity: 0;
     }
-
     100% {
         transform: scale(1);
         opacity: 1;
     }
 }
-
 @keyframes floatImage {
+
     0% {
         transform: translateY(0);
     }
+    50%{
+        transform: translateY(-20px);
+
 
     50% {
         transform: translateY(-20px);
 
     }
-
-    100% {
+    100%{
         transform: translateY(0);
     }
+
 }
+
