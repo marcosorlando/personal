@@ -6,24 +6,47 @@
     --first-color: #00EEFF;
     --second-color: #1F242D;
     --third-color: #2C4766;
+    --main-color: #0ef;
+    --text-color: #fff;
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family-primary);
     font-size: 16px;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
     background-color: var(--second-color);
     font-size: 1em;
     min-height: 100vh;
+
+    color: var(--text-color);
 }
+
+h1 {
+    font-size: 3em;
+
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
 
 .header {
     position: fixed;
@@ -36,7 +59,8 @@ body {
     justify-content: space-between;
 }
 
-.text-first-color{
+
+.text-first-color {
     color: var(--first-color);
 }
 
@@ -93,7 +117,6 @@ body {
     font-weight: 700;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
-
 }
 
 .home-content h3 > span {
@@ -107,7 +130,19 @@ body {
     animation-delay: .7s;
 }
 
-.home-content p{
+
+.home-content h3>span {
+    color: var(--first-color);
+    font-size: 1em;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin: 0 0 30px 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content p {
     font-size: 1em;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -175,7 +210,8 @@ body {
 }
 
 /* LOGIN PAGE */
-.animation-circle{
+.animation-circle {
+
     position: relative;
     width: 256px;
     height: 256px;
@@ -184,7 +220,9 @@ body {
     align-items: center;
 }
 
-.animation-circle span{
+
+.animation-circle span {
+
     position: absolute;
     left: 0;
     width: 32px;
@@ -196,6 +234,7 @@ body {
     animation: animateBlink 3s linear infinite;
     animation-delay: calc(var(--i)*(3s / 50));
 }
+
 .login-box {
     width: 100vw;
     min-height: 100vh;
@@ -220,12 +259,18 @@ body {
     font-size: 2em;
     color: var(--first-color);
 }
-.input-box{
+
+
+.input-box {
     position: relative;
     margin: 25px 0;
 }
+
 .input-box input {
     width: 100%;
+    height: 50px;
+    background-color: transparent !important;
+
     border: 2px solid var(--third-color);
     outline: none;
     border-radius: 40px;
@@ -234,11 +279,19 @@ body {
     color: #FFFFFF;
     padding: 0 20px;
 }
+
 .input-box input:focus,
 .input-box input:valid
 {
     border-color: var(--first-color);
 }
+
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: var(--first-color);
+}
+
 .input-box label {
     position: absolute;
     top: 50%;
@@ -249,20 +302,34 @@ body {
     pointer-events: none;
     transition: ease .5s;
 }
+
 .input-box input:focus~label,
 .input-box input:valid~label
 {
+
+
+.input-box input:focus~label,
+.input-box input:valid~label {
     top: 1px;
     font-size: 0.8em;
     background-color: var(--second-color);
     padding: 0 6px;
     color: var(--first-color);
 }
+
 .input-box:nth-of-type(1){
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 .input-box:nth-of-type(2){
+
+.input-box:nth-of-type(1) {
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.input-box:nth-of-type(2) {
+
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
@@ -355,6 +422,159 @@ body {
     color: var(--first-color);
     font-size: 1em;
 }
+
+.forgot-pass a:hover {
+    text-decoration: underline
+}
+
+.login-box form .btn {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.signup-link a {
+    font-size: 1.1em;
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    text-shadow: -2px -2px 4px rgba(0, 0, 0);
+}
+
+/*About css*/
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 2rem 0 3rem;
+    color: #FFFFFF;
+}
+
+.about-content h2>span {
+    color: var(--first-color);
+    font-size: 1em;
+}
+
+section {
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.services {
+
+    padding: 70px 0;
+}
+
+
+.services h2 {
+    margin-bottom: 5rem;
+
+
+}
+
+.services h2>span {
+    font-size: 1em;
+    color: var(--first-color);
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+
+    margin: 0 auto;
+}
+
+.services-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 4rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .3rem solid rgba(0, 0, 0, 0.5);
+    transition: .5s ease;
+    max-width: 30%;
+    width: 300px;
+
+}
+
+.services-container .services-box:hover {
+
+    border-color: var(--main-color);
+    transform: scale(1.02);
+
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+
+/*.#########################
+### KEYFRAMES ANIMATION ####
+#########################.*/
+
+@keyframes animateBlink {
+    0% {
+        background-color: var(--first-color);
+    }
+
+    25% {
+        background-color: var(--third-color);
+    }
+}
+
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -410,14 +630,21 @@ body {
     }
 }
 @keyframes floatImage {
-    0%{
+
+    0% {
         transform: translateY(0);
     }
     50%{
+        transform: translateY(-20px);
+
+
+    50% {
         transform: translateY(-20px);
 
     }
     100%{
         transform: translateY(0);
     }
+
 }
+
