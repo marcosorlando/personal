@@ -16,6 +16,8 @@ include_once "inc/header.php";
 include_once "inc/intro.php";
 include_once "inc/about.php";
 include_once "inc/services.php";
+include_once "inc/contact.php";
+
 ?>
 
 
@@ -26,5 +28,7 @@ include_once "inc/services.php";
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="_js/script.js"></script>
+    <script src="_js/PhoneMask.js"></script>
+
 </body>
 </html>
