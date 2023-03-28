@@ -15,6 +15,7 @@
 include_once "inc/header.php";
 include_once "inc/intro.php";
 include_once "inc/about.php";
+include_once "inc/portifolio.php";
 include_once "inc/services.php";
 include_once "inc/contact.php";
 
